@@ -7,8 +7,8 @@ display_footer: none
 
 remote_theme: jameshamann/jekyll-material-theme
 
-parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
-parallax_image_two: assets/images/startup3.jpg
+parallax_image_one: assets/images/rothko1.jpg # These are the images used for the parallax background
+parallax_image_two: assets/images/rothko1.jpg
 
 # Settings for the porfolio section
 

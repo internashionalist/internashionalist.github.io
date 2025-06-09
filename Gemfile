@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll-material-theme"
+gem "jekyll-remote-theme"
 
 gem "github-pages", group: :jekyll_plugins
 

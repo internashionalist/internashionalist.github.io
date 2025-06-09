@@ -5,7 +5,7 @@ description: Write an awesome description for your new site here. You can edit t
 
 display_footer: none
 
-theme: jekyll-material-theme
+remote_theme: jameshamann/jekyll-material-theme
 
 parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
 parallax_image_two: assets/images/startup3.jpg
@@ -164,3 +164,4 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-minifier
+  - jekyll-remote-theme

@@ -6,7 +6,7 @@ display_footer: none
 
 remote_theme: jameshamann/jekyll-material-theme
 
-parallax_image_one: images/Rothko1.jpg # These are the images used for the parallax background
+parallax_image_one: images/Rothko1.jpg
 parallax_image_two: images/Rothko1.jpg
 
 # Settings for the porfolio section
@@ -60,6 +60,9 @@ colored: colored # Leave blank for black and white icons
 project_button: Github
 
 github: https://github.com/internashionalist
+
+baseurl: ""
+url: nashthames.com
 
 cookie_accept_message: Thanks! # The pop-up dialog that appears after accepting the cookie notice.
 

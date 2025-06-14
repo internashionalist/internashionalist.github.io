@@ -40,21 +40,23 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: rgba(36, 59, 85, 0.85);
-  --surface-color: rgba(46, 74, 107, 0.90);
+  --background-color: #243b55; /* muted steel‑blue */
+  --surface-color: #2e4a6b;    /* complementary mid‑blue surface */
 }
 
 /* Medium preset for sections that need a mid‑tone backdrop */
 .medium-background {
-  --background-color: rgba(23, 48, 73, 0.90);
-  --surface-color: rgba(32, 61, 89, 0.92); }
+  --background-color: #173049; /* deep teal‑blue */
+  --surface-color: #203d59;    /* slightly lighter card surface */
+}
 
 .dark-background {
-  --background-color: rgba(8, 20, 35, 0.88);
-  --default-color: #dce1e5;
-  --heading-color: #ffffff;
-  --surface-color: rgba(15, 33, 56, 0.92);
-  --contrast-color: #ffffff; }
+  --background-color: #081423; /* ultra‑dark blue */
+  --default-color: #dce1e5;    /* neutral text */
+  --heading-color: #ffffff;    /* bright headings */
+  --surface-color: #0f2138;    /* darkest card surface */
+  --contrast-color: #ffffff;   /* text on accent */
+}
 
 /* Smooth scroll */
 :root {
@@ -67,7 +69,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  background-image: url("../img/Rothko1.jpg"); /* corrected relative path */
+  background-image: url("assets/img/Rothko1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -153,7 +155,10 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-image: url("../img/Rothko1.jpg"); /* Rothko painting */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -164,6 +169,16 @@ h6 {
   overflow-y: auto;
   z-index: 997;
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+/* Dark overlay so nav links stay legible */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 23, 37, 0.75); /* same deep navy, 75 % opacity */
+  pointer-events: none;
+  z-index: -1; /* keeps overlay behind the menu */
 }
 
 .header .profile-img img {
@@ -512,7 +527,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color) 85%, transparent);
+  background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
 }

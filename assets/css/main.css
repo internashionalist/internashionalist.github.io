@@ -40,23 +40,21 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #243b55; /* muted steel‑blue */
-  --surface-color: #2e4a6b;    /* complementary mid‑blue surface */
+  --background-color: rgba(36, 59, 85, 0.85);
+  --surface-color: rgba(46, 74, 107, 0.90);
 }
 
 /* Medium preset for sections that need a mid‑tone backdrop */
 .medium-background {
-  --background-color: #173049; /* deep teal‑blue */
-  --surface-color: #203d59;    /* slightly lighter card surface */
-}
+  --background-color: rgba(23, 48, 73, 0.90);
+  --surface-color: rgba(32, 61, 89, 0.92); }
 
 .dark-background {
-  --background-color: #081423; /* ultra‑dark blue */
-  --default-color: #dce1e5;    /* neutral text */
-  --heading-color: #ffffff;    /* bright headings */
-  --surface-color: #0f2138;    /* darkest card surface */
-  --contrast-color: #ffffff;   /* text on accent */
-}
+  --background-color: rgba(8, 20, 35, 0.88);
+  --default-color: #dce1e5;
+  --heading-color: #ffffff;
+  --surface-color: rgba(15, 33, 56, 0.92);
+  --contrast-color: #ffffff; }
 
 /* Smooth scroll */
 :root {
@@ -514,7 +512,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: color-mix(in srgb, var(--background-color) 85%, transparent);
   padding: 60px 0;
   overflow: clip;
 }
@@ -1293,14 +1291,4 @@ section,
 .accent-btn:hover,
 .accent-btn:focus{
   background-color: color-mix(in srgb, var(--surface-color), white 25%); /* lighter on hover */
-}
-
-.main {
-	background-image: url("../img/Rothko1.jpg");
-	/* path is from css file */
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	/* subtle parallax feel */
-	background-repeat: no-repeat;
 }

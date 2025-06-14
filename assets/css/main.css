@@ -69,7 +69,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  background-image: url("assets/img/Rothko1.jpg");
+  background-image: url("../img/Rothko1.jpg"); /* corrected relative path */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

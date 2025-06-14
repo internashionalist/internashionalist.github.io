@@ -23,7 +23,7 @@
   --default-color: #dce1e5;      /* light neutral text */
   --heading-color: #ffffff;      /* bright headings */
   --accent-color: #c19a6b;       /* warm earth‑tone accent */
-  --surface-color: #14263f;      /* slightly lighter dark blue for cards */
+  --surface-color: #1a2e46;      /* lighter navy surface for cards */
   --contrast-color: #ffffff;     /* text on accent */
 }
 
@@ -40,8 +40,14 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #13273b; /* soft desaturated navy */
-  --surface-color: #1e354b;    /* very dark teal‑blue surface */
+  --background-color: #243b55; /* muted steel‑blue */
+  --surface-color: #2e4a6b;    /* complementary mid‑blue surface */
+}
+
+/* Medium preset for sections that need a mid‑tone backdrop */
+.medium-background {
+  --background-color: #173049; /* deep teal‑blue */
+  --surface-color: #203d59;    /* slightly lighter card surface */
 }
 
 .dark-background {
@@ -1277,16 +1283,14 @@ section,
 --------------------------------------------------------------*/
 
 .accent-btn{
-  background-color: color-mix(in srgb, var(--accent-color), white 25%); /* lighter base */
+  background-color: var(--surface-color); /* match card/navy surface */
+  border: 2px solid color-mix(in srgb, var(--surface-color), white 25%);
   color: var(--contrast-color) !important;
-  border:none;
   padding:12px 30px;
   font-size:1.1rem;
-  box-shadow:0 0 0 2px rgba(0,0,0,.2);
   transition: background-color .3s ease, box-shadow .3s ease;
 }
 .accent-btn:hover,
 .accent-btn:focus{
-  background-color: color-mix(in srgb, var(--accent-color), white 45%); /* even lighter on hover */
-  box-shadow:0 0 0 3px rgba(0,0,0,.3);
+  background-color: color-mix(in srgb, var(--surface-color), white 25%); /* lighter on hover */
 }

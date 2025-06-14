@@ -1294,3 +1294,13 @@ section,
 .accent-btn:focus{
   background-color: color-mix(in srgb, var(--surface-color), white 25%); /* lighter on hover */
 }
+
+.main {
+	background-image: url("../img/Rothko1.jpg");
+	/* path is from css file */
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	/* subtle parallax feel */
+	background-repeat: no-repeat;
+}

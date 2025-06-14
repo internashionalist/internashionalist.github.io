@@ -63,6 +63,11 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
+  background-image: url("assets/img/Rothko1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: var(--default-font);
 }
 
@@ -1272,7 +1277,7 @@ section,
 --------------------------------------------------------------*/
 
 .accent-btn{
-  background-color: color-mix(in srgb, var(--accent-color), white 45%); /* lighter base */
+  background-color: color-mix(in srgb, var(--accent-color), white 25%); /* lighter base */
   color: var(--contrast-color) !important;
   border:none;
   padding:12px 30px;
@@ -1282,6 +1287,6 @@ section,
 }
 .accent-btn:hover,
 .accent-btn:focus{
-  background-color: color-mix(in srgb, var(--accent-color), white 65%); /* even lighter on hover */
+  background-color: color-mix(in srgb, var(--accent-color), white 45%); /* even lighter on hover */
   box-shadow:0 0 0 3px rgba(0,0,0,.3);
 }

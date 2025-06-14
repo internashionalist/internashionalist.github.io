@@ -40,20 +40,20 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: rgba(36, 59, 85, 0.50);   /* 50 % opaque */
-  --surface-color:  rgba(46, 74, 107, 0.75);    /* card remains readable */
+  --background-color: rgba(36, 59, 85, 0.35);   /* 35 % opaque */
+  --surface-color:  rgba(46, 74, 107, 0.65);
 }
 
 .medium-background {
-  --background-color: rgba(23, 48, 73, 0.60);   /* 60 % opaque */
-  --surface-color:  rgba(32, 61, 89, 0.80);
+  --background-color: rgba(23, 48, 73, 0.45);   /* 45 % opaque */
+  --surface-color:  rgba(32, 61, 89, 0.70);
 }
 
 .dark-background {
-  --background-color: rgba(8, 20, 35, 0.70);    /* 70 % opaque */
+  --background-color: rgba(8, 20, 35, 0.55);    /* 55 % opaque */
   --default-color:   #dce1e5;
   --heading-color:   #ffffff;
-  --surface-color:   rgba(15, 33, 56, 0.80);
+  --surface-color:   rgba(15, 33, 56, 0.70);
   --contrast-color:  #ffffff;
 }
 
@@ -68,7 +68,7 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  background-image: url("assets/img/Rothko1.jpg");
+  background-image: url("../img/Rothko1.jpg");  /* corrected relative path */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -513,7 +513,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 25%); /* 75 % opaque */
+  background-color: color-mix(in srgb, var(--background-color), transparent 40%); /* 60 % opaque */
   padding: 60px 0;
   overflow: clip;
 }
@@ -1296,10 +1296,3 @@ section,
   box-shadow:0 0 0 3px rgba(0,0,0,.3);
 }
 
-.main {
-	background-image: url("../img/Rothko1.jpg");
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}

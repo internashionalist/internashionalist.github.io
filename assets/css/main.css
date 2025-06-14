@@ -1295,3 +1295,11 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), white 55%); /* even lighter on hover */
   box-shadow:0 0 0 3px rgba(0,0,0,.3);
 }
+
+.main {
+	background-image: url("../img/Rothko1.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}

@@ -1272,7 +1272,7 @@ section,
 --------------------------------------------------------------*/
 
 .accent-btn{
-  background-color: color-mix(in srgb, var(--accent-color), white 20%); /* lighter base */
+  background-color: color-mix(in srgb, var(--accent-color), white 45%); /* lighter base */
   color: var(--contrast-color) !important;
   border:none;
   padding:12px 30px;
@@ -1282,6 +1282,6 @@ section,
 }
 .accent-btn:hover,
 .accent-btn:focus{
-  background-color: color-mix(in srgb, var(--accent-color), white 35%); /* even lighter on hover */
+  background-color: color-mix(in srgb, var(--accent-color), white 65%); /* even lighter on hover */
   box-shadow:0 0 0 3px rgba(0,0,0,.3);
 }

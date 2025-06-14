@@ -1270,6 +1270,18 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.accent-btn{
+  background-color: color-mix(in srgb, var(--accent-color), white 20%); /* lighter base */
+  color: var(--contrast-color) !important;
+  border:none;
+  padding:12px 30px;
+  font-size:1.1rem;
+  box-shadow:0 0 0 2px rgba(0,0,0,.2);
+  transition: background-color .3s ease, box-shadow .3s ease;
+}
+.accent-btn:hover,
+.accent-btn:focus{
+  background-color: color-mix(in srgb, var(--accent-color), white 35%); /* even lighter on hover */
+  box-shadow:0 0 0 3px rgba(0,0,0,.3);
 }

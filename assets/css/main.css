@@ -40,21 +40,21 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: rgba(36, 59, 85, 0.85);
-  --surface-color: rgba(46, 74, 107, 0.90);
+  --background-color: rgba(36, 59, 85, 0.70);   /* 70 % opaque */
+  --surface-color:  rgba(46, 74, 107, 0.85);    /* card slightly stronger */
 }
 
 .medium-background {
-  --background-color: rgba(23, 48, 73, 0.90);
-  --surface-color: rgba(32, 61, 89, 0.92);
+  --background-color: rgba(23, 48, 73, 0.78);   /* 78 % opaque */
+  --surface-color:  rgba(32, 61, 89, 0.88);
 }
 
 .dark-background {
-  --background-color: rgba(8, 20, 35, 0.88);
-  --default-color: #dce1e5;
-  --heading-color: #ffffff;
-  --surface-color: rgba(15, 33, 56, 0.92);
-  --contrast-color: #ffffff;
+  --background-color: rgba(8, 20, 35, 0.80);    /* 80 % opaque */
+  --default-color:   #dce1e5;
+  --heading-color:   #ffffff;
+  --surface-color:   rgba(15, 33, 56, 0.88);
+  --contrast-color:  #ffffff;
 }
 
 /* Smooth scroll */
